@@ -1,0 +1,22 @@
+.page__body {
+  font-size: 16px;
+  background-color: blueviolet;
+  width: 100wh;
+}
+.page__header {
+  position: relative;
+}
+.page__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 428px; /*380px + paddings 24px*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}/*# sourceMappingURL=page.css.map */

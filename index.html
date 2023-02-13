@@ -15,17 +15,49 @@
     <header class="page__header">
       <div class="page__container">
         <img class="logo" width="40" height="58" src="./img/logo.png" />
+        <button
+          class="menu__button js-btn-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Mobile menu slider"
+        >
+          <svg class="js-close-menu">
+            <use href="./img/sprite.svg#hamburger"></use>
+          </svg>
+        </button>
         <nav class="menu">
-          <ul class="list menu__list">
+          <ul
+            class="list menu__list menu__list--is-hidden js-menu-container"
+            id="mobile-menu"
+          >
             <li class="menu__item">Головна</li>
             <li class="menu__item">Екскурсії</li>
             <li class="menu__item">Особистий кабінет</li>
           </ul>
         </nav>
-        <button>close</button>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="section section--hero">
+        <div class="section__content section__content--hero">
+          <h1 class="section__title section__title--hero">Подорожуй <span class="">разом з</span> <span class="">petro trevel</span></h1>
+          <button class="button" type="button">
+            До екскурсій
+            <svg class="button__icon">
+              <use href="./img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

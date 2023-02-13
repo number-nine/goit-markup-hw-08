@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+
+  min-width: 230px;
+  height: 50px;
+  padding: 0 16px;
+  margin: 0;
+
+  color: white;
+  background-color: aqua;
+
+  border-radius: 25px;
+  border: none;
+
+  cursor: pointer;
+
+  &__icon {
+    width: 14px;
+    // height: 24px;
+
+    fill: currentColor;
+  }
+}

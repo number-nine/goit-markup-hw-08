@@ -1,15 +1,20 @@
 .carousel {
   max-width: 428px;
+  position: relative;
+  left: -24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 
   &__list {
     display: flex;
     column-gap: 20px;
-    overflow-x: scroll;
+    
   }
 
   &__item {
     display: flex;
     flex-shrink: 0;
+    
     justify-content: center;
     align-items: center;
     width: 295px;
@@ -17,6 +22,7 @@
     border-radius: 10px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
       url(../img/carousel-hero-pic01.jpg);
+    scroll-snap-align: start;
   }
 
   &__play-icon {

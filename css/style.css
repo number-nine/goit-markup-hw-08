@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Montserrat-Black;
+  src: url("../font/Montserrat-Black.ttf");
+}
+@font-face {
+  font-family: mr_kindlyjasmineg;
+  src: url("../font/mr_kindlyjasmineg.ttf");
+}
 .list {
   margin-top: 0;
   margin-bottom: 0;
@@ -33,11 +41,14 @@
 
 .carousel {
   max-width: 428px;
+  position: relative;
+  left: -24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 .carousel__list {
   display: flex;
   column-gap: 20px;
-  overflow-x: scroll;
 }
 .carousel__item {
   display: flex;
@@ -48,6 +59,7 @@
   height: 187px;
   border-radius: 10px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/carousel-hero-pic01.jpg);
+  scroll-snap-align: start;
 }
 .carousel__play-icon {
   width: 66px;
@@ -168,20 +180,28 @@
 }
 .title-petro .div2 {
   grid-area: 2/3/3/5;
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1;
   color: #ffc700;
+  font-family: mr_kindlyjasmineg, cursive;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1;
   text-transform: none;
 }
 .title-petro .div3 {
   grid-area: 3/1/4/4;
+  font-family: Montserrat-Black, sans-serif;
   font-weight: 900;
+  font-size: 72px;
   line-height: 0.9;
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
 }
 .title-petro .div4 {
   grid-area: 4/1/5/4;
+  font-family: Montserrat-Black, sans-serif;
   font-weight: 900;
+  font-size: 72px;
   line-height: 0.9;
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=style.css.map */

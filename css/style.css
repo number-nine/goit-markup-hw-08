@@ -15,14 +15,44 @@
   padding: 0 16px;
   margin: 0;
   color: white;
-  background-color: aqua;
-  border-radius: 25px;
+  background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+  border-radius: 60px;
   border: none;
   cursor: pointer;
 }
 .button__icon {
   width: 14px;
   fill: currentColor;
+}
+
+.social-links__icon {
+  fill: white;
+  width: 32px;
+  height: 32px;
+}
+
+.carousel {
+  max-width: 428px;
+}
+.carousel__list {
+  display: flex;
+  column-gap: 20px;
+  overflow-x: scroll;
+}
+.carousel__item {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 295px;
+  height: 187px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/carousel-hero-pic01.jpg);
+}
+.carousel__play-icon {
+  width: 66px;
+  height: 66px;
+  fill: #ffc700;
 }
 
 .page__body {
@@ -34,6 +64,7 @@
 .page__header {
   position: absolute;
   width: 100%;
+  top: 26px;
 }
 .page__container {
   top: 0;
@@ -99,10 +130,24 @@
   margin-right: auto;
   padding-top: 200px;
   max-width: 428px;
-  height: 928px;
   background-image: url("../img/hero-bg-mob.jpg");
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 90px;
+  flex-basis: auto;
 }
+.section__socials {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  row-gap: 8px;
+}
+.section__carousel {
+  margin-top: 15px;
+}
+
 .title-petro {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -111,6 +156,9 @@
   grid-row-gap: 0px;
   color: white;
   text-transform: uppercase;
+  width: 323px;
+  height: 186px;
+  border: 2px solid #fff;
 }
 .title-petro .div1 {
   grid-area: 1/1/2/5;
@@ -130,12 +178,10 @@
 .title-petro .div3 {
   grid-area: 3/1/4/4;
   font-weight: 900;
-  font-size: 72px;
   line-height: 0.9;
 }
 .title-petro .div4 {
   grid-area: 4/1/5/4;
   font-weight: 900;
-  font-size: 72px;
   line-height: 0.9;
 }/*# sourceMappingURL=style.css.map */

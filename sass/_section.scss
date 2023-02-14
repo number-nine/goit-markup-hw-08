@@ -13,10 +13,22 @@
       margin-right: auto;
       padding-top: 200px;
       max-width: 428px;
-      height: 928px;
+      // height: 1019px;
       background-image: url("../img/hero-bg-mob.jpg");
       background-repeat: no-repeat;
+    
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      row-gap: 90px;
+      flex-basis: auto;
     }
+  }
+  &__socials{
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    row-gap: 8px;
   }
 
   &__title {
@@ -26,5 +38,10 @@
         // flex-direction: column;
     }
     
+  }
+
+  &__carousel {
+    // overflow: hidden;
+    margin-top: 15px;
   }
 }

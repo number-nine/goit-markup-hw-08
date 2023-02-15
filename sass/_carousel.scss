@@ -8,21 +8,40 @@
   &__list {
     display: flex;
     column-gap: 20px;
-    
+    // padding-left: 24px;
+  }
+  &--video {
   }
 
   &__item {
     display: flex;
     flex-shrink: 0;
-    
+
     justify-content: center;
     align-items: center;
-    width: 295px;
-    height: 187px;
+
     border-radius: 10px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-      url(../img/carousel-hero-pic01.jpg);
+
     scroll-snap-align: start;
+
+    &--video {
+      width: 295px;
+      height: 187px;
+
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url(../img/carousel-hero-pic01.jpg);
+    }
+    &--excurtion {
+        width: 280px;
+      height: 540px;
+      background-color: gray;
+
+    }
+
+    &:first-child {
+    //   margin-left: 24px;
+    // outline: 2px solid red;
+    }
   }
 
   &__play-icon {

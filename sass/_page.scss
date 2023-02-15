@@ -28,5 +28,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &--popular {
+            flex-direction: column;
+        }
     }
 }

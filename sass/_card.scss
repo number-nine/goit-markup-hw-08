@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  border-radius: 10px;
+  &--promo {
+    width: 280px;
+    height: 540px;
+  }
+
+  &__ribric {
+
+  }
+  &__title {
+    color: $accent-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  &__caption {
+    
+  }
+
+}

@@ -6,6 +6,19 @@
   font-family: mr_kindlyjasmineg;
   src: url("../font/mr_kindlyjasmineg.ttf");
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list {
   margin-top: 0;
   margin-bottom: 0;
@@ -26,7 +39,13 @@
   background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
   border-radius: 60px;
   border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
   cursor: pointer;
+}
+.button--link {
+  text-decoration: none;
 }
 .button__icon {
   width: 14px;
@@ -55,11 +74,18 @@
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  scroll-snap-align: start;
+}
+.carousel__item--video {
   width: 295px;
   height: 187px;
-  border-radius: 10px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/carousel-hero-pic01.jpg);
-  scroll-snap-align: start;
+}
+.carousel__item--excurtion {
+  width: 280px;
+  height: 540px;
+  background-color: gray;
 }
 .carousel__play-icon {
   width: 66px;
@@ -89,6 +115,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.page__container--popular {
+  flex-direction: column;
 }
 
 .menu {
@@ -132,6 +161,9 @@
 .section {
   padding: 0;
   margin: 0;
+}
+.section--popular {
+  padding-top: 150px;
 }
 .section__content {
   padding-left: 24px;

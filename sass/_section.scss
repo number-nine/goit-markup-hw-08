@@ -5,7 +5,7 @@
   &--hero {
   }
 
-  &--popular{
+  &--popular {
     padding-top: 150px;
   }
 
@@ -17,18 +17,20 @@
       margin-right: auto;
       padding-top: 200px;
       max-width: 428px;
-      // height: 1019px;
       background-image: url("../img/hero-bg-mob.jpg");
       background-repeat: no-repeat;
-    
+
       display: flex;
       flex-direction: column;
       align-items: start;
       row-gap: 90px;
       flex-basis: auto;
     }
+    &--popular {
+      margin-top: 92px;
+    }
   }
-  &__socials{
+  &__socials {
     display: flex;
     flex-direction: column;
     align-self: end;
@@ -36,12 +38,18 @@
   }
 
   &__title {
+    padding: 0;
+    margin: 0;
+    color: $section-title-color;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
 
     &--hero {
-        // display: flex;
-        // flex-direction: column;
+      // display: flex;
+      // flex-direction: column;
     }
-    
   }
 
   &__carousel {

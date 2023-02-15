@@ -92,7 +92,7 @@
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
 }
 .page__header {
@@ -114,6 +114,7 @@
 }
 .page__container--popular {
   flex-direction: column;
+  align-items: start;
 }
 
 .menu {
@@ -178,11 +179,22 @@
   row-gap: 90px;
   flex-basis: auto;
 }
+.section__content--popular {
+  margin-top: 92px;
+}
 .section__socials {
   display: flex;
   flex-direction: column;
   align-self: end;
   row-gap: 8px;
+}
+.section__title {
+  padding: 0;
+  margin: 0;
+  color: #0499DD;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
 }
 .section__carousel {
   margin-top: 15px;
@@ -235,18 +247,29 @@
 }
 
 .card {
+  position: relative;
+}
+.card--promo {
+  color: white;
+}
+.card__thumb {
+  display: block;
+}
+.card__content {
+  height: 540px;
+  align-items: start;
+  position: absolute;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  top: 0;
+  left: 0;
 }
-.card--promo {
-  width: 280px;
-  height: 540px;
-  color: white;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/card-promo-bg.jpg);
-}
-.card__ribric {
-  margin: 0;
+.card__rubric {
+  margin: 182px 0 0 0;
   padding: 0;
 }
 .card__title {
@@ -256,4 +279,39 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
+}
+.card__attributes {
+  display: flex;
+  column-gap: 15px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.25;
+}
+.card__attribute-item {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  margin: 10px 0 0 0;
+}
+.card__attribute-icon {
+  fill: white;
+}
+.card__attribute-icon--time {
+  width: 12px;
+  height: 12px;
+}
+.card__attribute-icon--price {
+  width: 15px;
+  height: 15px;
+}
+.card__description {
+  margin: 20px 0 0 0;
+  line-height: 1.23;
+}
+.card__button {
+  margin: auto 0 30px 0;
+  min-width: 160px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 1.25;
 }/*# sourceMappingURL=style.css.map */

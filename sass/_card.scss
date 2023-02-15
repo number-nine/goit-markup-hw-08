@@ -1,19 +1,35 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
+  position: relative;
   &--promo {
-    width: 280px;
-    height: 540px;
+    // width: 280px;
+    // height: 540px;
     color: white;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-        url(../img/card-promo-bg.jpg);
+    //  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    //     url(../img/card-promo-bg.jpg);
   }
 
-  &__ribric {
-    margin: 0;
-    padding: 0;
+  &__thumb {
+    display: block;
+  }
 
+  &__content {
+    height: 540px;
+    align-items: start;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 0;
+    left: 0;
+  }
+
+  &__rubric {
+    margin: 182px 0 0 0;
+    padding: 0;
   }
   &__title {
     margin: 0;
@@ -23,8 +39,45 @@
     font-weight: 700;
     line-height: 1.2;
   }
-  &__caption {
-
+  &__attributes {
+    display: flex;
+    column-gap: 15px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+  &__attribute-item {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    margin: 10px 0 0 0;
   }
 
+  &__attribute-icon {
+    fill: white;
+
+    &--time {
+      width: 12px;
+      height: 12px;
+    }
+
+    &--price {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &__description {
+    margin: 20px 0 0 0;
+    line-height: 1.23;
+  }
+
+  &__button {
+    // margin-top: auto;
+    margin: auto 0 30px 0;
+    min-width: 160px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
 }

@@ -1,14 +1,27 @@
 .card {
   position: relative;
   &--promo {
-
     color: white;
     //  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     //     url(../img/card-promo-bg.jpg);
   }
 
+  &--services {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-areas:
+      "icon title title"
+      "icon text text"
+      ".    text text";
+  }
+
   &__thumb {
     display: block;
+
+    &--services {
+      grid-area: icon;
+    }
   }
 
   &__content {
@@ -37,6 +50,17 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 1.2;
+
+    &--services {
+      grid-area: title;
+      
+      color: $section-title-color;
+
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.2;
+
+    }
   }
   &__attributes {
     display: flex;
@@ -69,6 +93,11 @@
   &__description {
     margin: 20px 0 0 0;
     line-height: 1.23;
+
+    &--services {
+      grid-area: text;
+      margin-top: 0;
+    }
   }
 
   &__button {

@@ -55,5 +55,9 @@
           url("../img/section-about-bg-mob.jpg");
       }
     }
+
+    &--services {
+        flex-direction: column;
+    }
   }
 }

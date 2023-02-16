@@ -116,6 +116,22 @@
   flex-direction: column;
   align-items: start;
 }
+.page__container--about {
+  position: relative;
+  height: 704px;
+}
+.page__container--about::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 304px;
+  height: 100%;
+  content: "";
+  background-color: aqua;
+  border-radius: 0px 10px 10px 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/section-about-bg-mob.jpg");
+}
 
 .menu {
   position: absolute;
@@ -158,8 +174,6 @@
 .section {
   padding: 0;
   margin: 0;
-}
-.section--popular {
   padding-top: 150px;
 }
 .section__content {
@@ -182,6 +196,14 @@
 .section__content--popular {
   margin-top: 92px;
 }
+.section__content--about {
+  margin-top: 159px;
+  padding: 43px;
+  width: 100%;
+  min-height: 386px;
+  background-color: #EDEDED;
+  border-radius: 10px;
+}
 .section__socials {
   display: flex;
   flex-direction: column;
@@ -198,6 +220,15 @@
 }
 .section__carousel {
   margin-top: 15px;
+}
+.section__description {
+  margin: 20px 0 0 0;
+  color: #282828;
+  font-weight: 500;
+  line-height: 1.23;
+}
+.section__description--big-gap {
+  margin-top: 40px;
 }
 
 .title-petro {

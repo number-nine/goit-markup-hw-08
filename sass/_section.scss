@@ -1,12 +1,18 @@
 .section {
   padding: 0;
   margin: 0;
+  padding-top: 150px;
 
   &--hero {
   }
 
   &--popular {
-    padding-top: 150px;
+    
+  }
+
+  &--about {
+   
+   
   }
 
   &__content {
@@ -28,6 +34,17 @@
     }
     &--popular {
       margin-top: 92px;
+    }
+    &--about {
+      margin-top: 159px;
+      padding: 43px;
+      width: 100%;
+      min-height: 386px;
+      background-color: #EDEDED;
+
+      border-radius: 10px;
+
+      
     }
   }
   &__socials {
@@ -55,5 +72,18 @@
   &__carousel {
     // overflow: hidden;
     margin-top: 15px;
+  }
+
+  &__description {
+  
+    margin: 20px 0 0 0;
+    color: #282828;
+    font-weight: 500;
+    line-height: 1.23;
+
+    &--big-gap {
+      margin-top: 40px;
+    }
+  
   }
 }

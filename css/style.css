@@ -246,33 +246,30 @@
 
 .title-petro {
   display: grid;
+  grid-template-areas: "trevel trevel trevel trevel  . ." ".      .     . with   with with" "petro  petro petro   petro . ." "pt     pt    pt  pt   pt  pt";
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 36px 36px 72px 72px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   color: white;
   text-transform: uppercase;
-  width: 323px;
-  height: 186px;
-  border: 2px solid #fff;
 }
 .title-petro .div1 {
-  grid-area: 1/1/2/5;
+  grid-area: trevel;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.22;
+  line-height: 0.9;
 }
 .title-petro .div2 {
-  grid-area: 2/3/3/5;
+  grid-area: with;
   color: #ffc700;
   font-family: mr_kindlyjasmineg, cursive;
   font-weight: 400;
   font-size: 48px;
-  line-height: 1;
+  line-height: 0.5;
   text-transform: none;
 }
 .title-petro .div3 {
-  grid-area: 3/1/4/4;
+  grid-area: petro;
   font-family: Montserrat-Black, sans-serif;
   font-weight: 900;
   font-size: 72px;
@@ -281,7 +278,7 @@
   -webkit-text-fill-color: transparent;
 }
 .title-petro .div4 {
-  grid-area: 4/1/5/4;
+  grid-area: pt;
   font-family: Montserrat-Black, sans-serif;
   font-weight: 900;
   font-size: 72px;

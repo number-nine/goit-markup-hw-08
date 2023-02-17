@@ -19,6 +19,17 @@
   overflow: hidden;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .list {
   margin-top: 0;
   margin-bottom: 0;
@@ -231,6 +242,11 @@
   font-size: 24px;
   line-height: 1.2;
 }
+.section__title--more {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .section__carousel {
   margin-top: 15px;
 }
@@ -257,7 +273,8 @@
   grid-area: trevel;
   font-weight: 700;
   font-size: 36px;
-  line-height: 0.9;
+  line-height: 0.6;
+  align-self: end;
 }
 .title-petro .div2 {
   grid-area: with;
@@ -267,6 +284,8 @@
   font-size: 48px;
   line-height: 0.5;
   text-transform: none;
+  align-self: start;
+  justify-self: start;
 }
 .title-petro .div3 {
   grid-area: petro;

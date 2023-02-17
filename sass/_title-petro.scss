@@ -22,7 +22,8 @@
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 0.9;
+    line-height: 0.6;
+        align-self: end;
   }
   .div2 {
     grid-area: with;
@@ -35,6 +36,8 @@
     line-height: 0.5;
 
     text-transform: none;
+    align-self: start;
+    justify-self: start;
     
   }
   .div3 {

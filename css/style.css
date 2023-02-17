@@ -146,6 +146,11 @@
 .page__container--services {
   flex-direction: column;
 }
+.page__container--reviews {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  border: 1px solid red;
+}
 
 .menu {
   position: absolute;
@@ -243,9 +248,7 @@
   line-height: 1.2;
 }
 .section__title--more {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  width: 50%;
 }
 .section__carousel {
   margin-top: 15px;
@@ -258,6 +261,9 @@
 }
 .section__description--big-gap {
   margin-top: 40px;
+}
+.section__link-more {
+  width: 50%;
 }
 
 .title-petro {
@@ -318,6 +324,10 @@
   row-gap: 10px;
   grid-template-areas: "icon title title" "icon text text" ".    text text";
 }
+.card--review {
+  display: flex;
+  flex-direction: column;
+}
 .card__thumb {
   display: block;
 }
@@ -336,6 +346,9 @@
   padding-right: 15px;
   top: 0;
   left: 0;
+}
+.card__content--review {
+  position: unset;
 }
 .card__rubric {
   margin: 182px 0 0 0;

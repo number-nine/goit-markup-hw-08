@@ -57,6 +57,8 @@
         margin-top: 90px;
         row-gap: 40px;
     }
+
+    
   }
   &__socials {
     display: flex;
@@ -80,9 +82,7 @@
     }
 
     &--more {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
+      width: 50%;
     }
   }
 
@@ -102,5 +102,9 @@
       margin-top: 40px;
     }
   
+  }
+
+  &__link-more {
+    width: 50%;
   }
 }

@@ -1,5 +1,6 @@
 .card {
   position: relative;
+
   &--promo {
     color: white;
     //  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
@@ -19,6 +20,17 @@
   &--review {
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
+    padding-left: 28px;
+    padding-right: 28px;
+    width: 280px;
+    min-height: 447px;
+
+    border-radius: 10px;
+    background-color: #ededed;
+    background-image: url(../img/review-card-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right 20px;
   }
 
   &__thumb {
@@ -27,10 +39,15 @@
     &--services {
       grid-area: icon;
     }
+
+    &--review {
+      margin-top: 32px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
   }
 
   &__content {
-    height: 540px;
     align-items: start;
 
     position: absolute;
@@ -43,12 +60,13 @@
     top: 0;
     left: 0;
 
-    &--popular {
-
+    &--promo {
+      height: 540px;
     }
 
     &--review {
-        position: unset;
+      position: static;
+      padding: 0;
     }
   }
 
@@ -66,13 +84,16 @@
 
     &--services {
       grid-area: title;
-      
+
       color: $section-title-color;
 
       font-weight: 700;
       font-size: 18px;
       line-height: 1.2;
+    }
 
+    &--review {
+      color: #282828;
     }
   }
   &__attributes {
@@ -110,6 +131,13 @@
     &--services {
       grid-area: text;
       margin-top: 0;
+      font-weight: 500;
+    }
+
+    &--review {
+      margin-top: 10px;
+      line-height: 1.25;
+      font-weight: 500;
     }
   }
 

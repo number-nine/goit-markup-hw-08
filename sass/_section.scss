@@ -58,6 +58,10 @@
         row-gap: 40px;
     }
 
+    &--reviews {
+        margin-top: 90px;
+    }
+
     
   }
   &__socials {
@@ -82,7 +86,11 @@
     }
 
     &--more {
-      width: 50%;
+    //   width: 50%;
+    // margin-left: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
     }
   }
 
@@ -105,6 +113,11 @@
   }
 
   &__link-more {
-    width: 50%;
+    // width: 50%;
+    margin-left: auto;
+    color: #282828;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
   }
 }

@@ -61,9 +61,11 @@
     }
 
     &--reviews {
-      flex-wrap: wrap;
-      flex-grow: 1;
-      border: 1px solid red;
-    }
+        flex-direction: column;
+    //   flex-wrap: wrap;
+    //   flex-grow: 1;
+// align-items: center;
+    //   align-content: space-between;
   }
+}
 }

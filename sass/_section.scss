@@ -8,12 +8,9 @@
   }
 
   &--popular {
-    
   }
 
   &--about {
-   
-   
   }
 
   &__content {
@@ -38,31 +35,33 @@
     }
     &--about {
       // margin-top: 159px;
-      
+
       padding: 43px;
       width: 100%;
       min-height: 386px;
-      background-color: #EDEDED;
+      background-color: #ededed;
 
       border-radius: 10px;
-
-      
     }
 
     &--services {
-        display: flex;
-        flex-direction: column;
-        padding-left: 0;
-        padding-right: 0;
-        margin-top: 90px;
-        row-gap: 40px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 70px;
+      row-gap: 40px;
+    }
+
+    &--gallery {
+      margin-top: 90px;
+      padding: 0;
     }
 
     &--reviews {
-        margin-top: 90px;
+      margin-top: 90px;
+      padding: 0;
     }
-
-    
   }
   &__socials {
     display: flex;
@@ -86,11 +85,19 @@
     }
 
     &--more {
-    //   width: 50%;
-    // margin-left: auto;
-    display: flex;
-    width: 100%;
-    align-items: center;
+      //   width: 50%;
+      // margin-left: auto;
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+
+    &--services {
+      // align-self: left;
+    }
+
+    &--footer{
+      color: #ffffff;
     }
   }
 
@@ -100,7 +107,6 @@
   }
 
   &__description {
-  
     margin: 20px 0 0 0;
     color: #282828;
     font-weight: 500;
@@ -109,7 +115,14 @@
     &--big-gap {
       margin-top: 40px;
     }
-  
+
+    &--services {
+      margin-top: 40px;
+
+      font-size: 14px;
+      text-align: center;
+
+    }
   }
 
   &__link-more {
@@ -120,4 +133,6 @@
     font-size: 12px;
     line-height: 1.25;
   }
+
+
 }

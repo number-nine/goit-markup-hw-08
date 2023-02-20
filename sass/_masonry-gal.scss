@@ -1,0 +1,32 @@
+.mansonry-gal {
+
+&__list {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "pic1 pic2"
+    "pic1 pic3"
+    "pic4 pic4";
+}
+
+&__item {
+    border-radius: 10px;
+
+    &--pic1 {
+        grid-area: pic1;
+    }
+
+    &--pic2 {
+        grid-area: pic2;
+    }
+
+    &--pic3 {
+        grid-area: pic3;
+    }
+
+    &--pic4 {
+        grid-area: pic4;
+    }
+}
+
+}

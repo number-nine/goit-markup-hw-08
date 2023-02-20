@@ -7,10 +7,8 @@
     padding-top: 0;
   }
 
-  &--popular {
-  }
-
-  &--about {
+  &--feedback {
+    padding-top: 0;
   }
 
   &__content {
@@ -62,6 +60,16 @@
       margin-top: 90px;
       padding: 0;
     }
+
+    &--feedback {
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 25px;
+      min-height: 640px;
+
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
   }
   &__socials {
     display: flex;
@@ -96,8 +104,9 @@
       // align-self: left;
     }
 
-    &--footer{
+    &--feedback {
       color: #ffffff;
+      margin-top: 138px;
     }
   }
 
@@ -121,7 +130,6 @@
 
       font-size: 14px;
       text-align: center;
-
     }
   }
 
@@ -134,5 +142,13 @@
     line-height: 1.25;
   }
 
+  &__tagline {
+    color: #ffc700;
+    margin-top: 6px;
+    margin-bottom: 0;
 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }

@@ -164,22 +164,13 @@
   border-radius: 0px 10px 10px 0px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/section-about-bg-mob.jpg");
 }
-.page__container--services {
-  flex-direction: column;
-  row-gap: 20px;
-  align-items: center;
-}
-.page__container--reviews {
-  flex-direction: column;
-  padding-bottom: 295px;
-}
-.page__container--footer {
+.page__container--feedback {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 1340px;
+  color: white;
 }
-.page__container--footer::before {
+.page__container--feedback::before {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -190,6 +181,15 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/footer-bg-mob.jpg");
   background-repeat: no-repeat;
   background-position: top left;
+}
+.page__container--services {
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+.page__container--reviews {
+  flex-direction: column;
+  padding-bottom: 295px;
 }
 
 .menu {
@@ -238,6 +238,9 @@
 .section--hero {
   padding-top: 0;
 }
+.section--feedback {
+  padding-top: 0;
+}
 .section__content {
   padding-left: 24px;
   padding-right: 24px;
@@ -281,6 +284,14 @@
   margin-top: 90px;
   padding: 0;
 }
+.section__content--feedback {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 25px;
+  min-height: 640px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
 .section__socials {
   display: flex;
   flex-direction: column;
@@ -300,8 +311,9 @@
   width: 100%;
   align-items: center;
 }
-.section__title--footer {
+.section__title--feedback {
   color: #ffffff;
+  margin-top: 138px;
 }
 .section__carousel {
   margin-top: 15px;
@@ -326,6 +338,14 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
+}
+.section__tagline {
+  color: #ffc700;
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
 }
 
 .title-petro {
@@ -496,4 +516,31 @@
   height: 40px;
   font-size: 12px;
   line-height: 1.25;
+}
+
+.feedback-form__input {
+  margin-top: 45px;
+  border-bottom: 1px solid #ffffff;
+}
+.feedback-form__label {
+  display: flex;
+  font-size: 12px;
+  line-height: 0.9;
+  align-items: flex-end;
+}
+.feedback-form__submit {
+  margin-top: 83px;
+  text-align: center;
+}
+.feedback-form__button {
+  display: inline-flex;
+}
+.feedback-form__text-field {
+  padding-left: 10px;
+  flex-grow: 1;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+  border: none;
 }/*# sourceMappingURL=style.css.map */

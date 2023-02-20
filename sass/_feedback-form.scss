@@ -1,0 +1,38 @@
+.feedback-form {
+
+    
+    &__input {
+        margin-top: 45px;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    &__label {
+        display: flex;
+        font-size: 12px;
+        line-height: 0.9;
+        align-items: flex-end;
+    }
+
+    &__submit {
+        margin-top: 83px;
+        text-align: center;
+        
+    }
+
+    &__button {
+        display: inline-flex;
+    }
+
+    &__text-field {
+        padding-left: 10px;
+        flex-grow: 1;
+
+        color: #ffffff;
+
+        font-size: 16px;
+
+        outline: none;
+        background-color: transparent;
+        border: none;
+    }
+}

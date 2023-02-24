@@ -1,8 +1,22 @@
 .social-links{
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    row-gap: 8px;
+   
+    &--horizontal{
+        flex-direction: row;
+        justify-items: center;
+        column-gap: 6px;
+    }
+
     &__icon {
         fill: white;
         width: 32px;
         height: 32px;
         
+        &--color {
+            fill: $section-title-color;
+        }
     }
 }

@@ -9,6 +9,7 @@
 
   &--feedback {
     padding-top: 0;
+    height: 928px;
   }
 
   &__content {
@@ -71,12 +72,12 @@
       backdrop-filter: blur(10px);
     }
   }
-  &__socials {
-    display: flex;
-    flex-direction: column;
-    align-self: end;
-    row-gap: 8px;
-  }
+  // &__socials {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-self: end;
+  //   row-gap: 8px;
+  // }
 
   &__title {
     padding: 0;

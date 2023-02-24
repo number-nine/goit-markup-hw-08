@@ -63,10 +63,24 @@
   fill: currentColor;
 }
 
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  row-gap: 8px;
+}
+.social-links--horizontal {
+  flex-direction: row;
+  justify-items: center;
+  column-gap: 6px;
+}
 .social-links__icon {
   fill: white;
   width: 32px;
   height: 32px;
+}
+.social-links__icon--color {
+  fill: #0499DD;
 }
 
 .carousel {
@@ -194,7 +208,7 @@
 
 .menu {
   position: absolute;
-  top: 100%;
+  top: -24px;
   right: 0;
   width: 100%;
 }
@@ -204,18 +218,21 @@
   row-gap: 24px;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 24px;
+  padding-top: 60px;
   margin-left: auto;
   margin-right: auto;
   max-width: 428px; /*same as container*/
-  height: calc(100vh - 60px);
-  background-color: transparent;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 .menu__list--is-hidden {
   display: none;
 }
 .menu__item {
+  color: #ffffff;
   font-size: 32px;
+  font-weight: 600;
 }
 .menu__button {
   display: flex;
@@ -228,6 +245,7 @@
   fill: white;
   border: none;
   background-color: transparent;
+  z-index: 1;
 }
 
 .section {
@@ -240,6 +258,7 @@
 }
 .section--feedback {
   padding-top: 0;
+  height: 928px;
 }
 .section__content {
   padding-left: 24px;
@@ -291,12 +310,6 @@
   min-height: 640px;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-}
-.section__socials {
-  display: flex;
-  flex-direction: column;
-  align-self: end;
-  row-gap: 8px;
 }
 .section__title {
   padding: 0;
@@ -543,4 +556,54 @@
   outline: none;
   background-color: transparent;
   border: none;
+}
+
+.footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  color: #282828;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.footer__content {
+  display: grid;
+  grid-template-areas: ".    logo logo    ." ".    logo logo    ." ". socials socials ." "menu menu cont cont" "menu menu cont cont" ".    .    email email";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+.footer__logo {
+  grid-area: logo;
+  justify-self: center;
+}
+.footer__socials {
+  grid-area: socials;
+  justify-self: center;
+  margin-top: 10px;
+}
+.footer__menu {
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-top: 60px;
+}
+.footer__contacts {
+  grid-area: cont;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-top: 60px;
+}
+.footer__contact-item {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  fill: currentColor;
+}
+.footer__email {
+  grid-area: email;
+  text-decoration: none;
+  color: inherit;
+  margin-top: 6px;
 }/*# sourceMappingURL=style.css.map */

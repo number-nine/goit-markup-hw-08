@@ -1,0 +1,68 @@
+.footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  color: #282828;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+
+  &__content {
+    display: grid;
+    grid-template-areas:
+      ".    logo logo    ."
+      ".    logo logo    ."
+      ". socials socials ."
+      "menu menu cont cont"
+      "menu menu cont cont"
+      ".    .    email email";
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      width: 100%;
+  }
+
+  &__logo {
+    grid-area: logo;
+    justify-self: center;
+  }
+
+  &__socials {
+    grid-area: socials;
+    justify-self: center;
+    margin-top: 10px;
+  }
+
+  &__menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-top: 60px;
+  }
+
+  &__contacts {
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    margin-top: 60px;
+
+  }
+
+  &__contact-item {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+
+    fill: currentColor;
+  }
+
+  &__email {
+        grid-area: email;
+        text-decoration: none;
+        color: inherit;
+        margin-top: 6px;
+  }
+}
